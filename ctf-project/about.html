@@ -6,24 +6,161 @@
     <title>О проекте - CTF Team</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<main>
-    <section class="about">
-        <h2>О нашем проекте</h2>
-        <div class="content">
-            <h3>Цели:</h3>
-            <ul>
-                <li>Обучение основам кибербезопасности</li>
-                <li>Подготовка к CTF-соревнованиям</li>
-                <li>Практическая работа с инструментами</li>
+<body>
+    <header class="about-header">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html" class="active">О проекте</a></li>
+                <li><a href="team.html">Участники</a></li>
+                <li><a href="blog.html">Журнал</a></li>
+                <li><a href="resources.html">Ресурсы</a></li>
             </ul>
-            
-            <h3>Изучаемые технологии:</h3>
-            <div class="skills-grid">
-                <div class="skill">SQL-инъекции</div>
-                <div class="skill">XSS атаки</div>
-                <div class="skill">Криптография</div>
-                <div class="skill">Стеганография</div>
-            </div>
+        </nav>
+        <div class="header-content">
+            <h1 class="glitch" data-text="О нашем проекте">О нашем проекте</h1>
+            <p class="subtitle">От новичков до профессионалов в кибербезопасности</p>
         </div>
-    </section>
-</main>
+    </header>
+
+    <main class="about-main">
+        <!-- Миссия проекта -->
+        <section class="mission-section">
+            <div class="container">
+                <div class="mission-grid">
+                    <div class="mission-content">
+                        <h2><span class="highlight">Наша миссия</span></h2>
+                        <p>Создать сильное сообщество специалистов по информационной безопасности через практическое обучение и участие в CTF-соревнованиях.</p>
+                        <div class="mission-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">2025</div>
+                                <div class="stat-label">Год основания</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">10+</div>
+                                <div class="stat-label">Проведенных занятий</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mission-image">
+                        <div class="hexagon"></div>
+                        <div class="code-snippet">
+                            <pre><code class="language-python"># Пример CTF-задачи
+def check_flag(flag):
+    if flag == "CTF{Th1s_1s_4_Fl4g}":
+        return True
+    return False</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Направления обучения -->
+        <section class="learning-section">
+            <div class="container">
+                <h2 class="section-title"><span class="icon">🎯</span> Направления обучения</h2>
+                <div class="learning-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="web">Web</button>
+                        <button class="tab-btn" data-tab="crypto">Криптография</button>
+                        <button class="tab-btn" data-tab="forensics">Форензика</button>
+                        <button class="tab-btn" data-tab="reverse">Реверс</button>
+                    </div>
+                    <div class="tab-content active" id="web">
+                        <h3>Web-уязвимости</h3>
+                        <ul class="skill-list">
+                            <li>SQL-инъекции</li>
+                            <li>XSS, CSRF, SSRF</li>
+                            <li>Подделка запросов</li>
+                            <li>JWT-атаки</li>
+                        </ul>
+                        <div class="tooltip">Используем: Burp Suite, OWASP ZAP, sqlmap</div>
+                    </div>
+                    <div class="tab-content" id="crypto">
+                        <h3>Криптография</h3>
+                        <ul class="skill-list">
+                            <li>Симметричное шифрование</li>
+                            <li>Асимметричные алгоритмы</li>
+                            <li>Хеширование</li>
+                            <li>Атаки на шифры</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="forensics">
+                        <h3>Компьютерная форензика</h3>
+                        <ul class="skill-list">
+                            <li>Анализ сетевого трафика</li>
+                            <li>Стеганография</li>
+                            <li>Восстановление данных</li>
+                            <li>Анализ памяти</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="reverse">
+                        <h3>Реверс-инжиниринг</h3>
+                        <ul class="skill-list">
+                            <li>Анализ исполняемых файлов</li>
+                            <li>Дизассемблирование</li>
+                            <li>Отладка</li>
+                            <li>Анализ вредоносного ПО</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Процесс обучения -->
+        <section class="process-section">
+            <div class="container">
+                <h2 class="section-title"><span class="icon">📈</span> Как мы обучаем</h2>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Теоретические основы</h3>
+                        <p>Лекции и разбор концепций кибербезопасности</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Практические задания</h3>
+                        <p>Решение реальных CTF-задач на учебных стендах</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Соревнования</h3>
+                        <p>Участие в университетских и открытых CTF</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Разбор полётов</h3>
+                        <p>Анализ решений и работа над ошибками</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Призыв к действию -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Готовы присоединиться?</h2>
+                <p>Мы ищем мотивированных студентов, желающих развиваться в области информационной безопасности</p>
+                <a href="team.html" class="btn btn-large">Узнать условия</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">CTF Team</div>
+                <div class="footer-links">
+                    <a href="#">Контакты</a>
+                    <a href="#">Партнёры</a>
+                    <a href="#">Документы</a>
+                </div>
+            </div>
+            <p class="copyright">© 2024 CTF Team Project. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

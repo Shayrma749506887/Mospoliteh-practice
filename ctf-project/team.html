@@ -6,20 +6,41 @@
     <title>О команде - CTF Team</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О проекте</a></li>
+                <li><a href="team.html">Участники</a></li>
+                <li><a href="blog.html">Журнал</a></li>
+                <li><a href="resources.html">Ресурсы</a></li>
+            </ul>
+        </nav>
+    </header>
 <main>
     <h2>Наша команда</h2>
     <div class="team-grid">
-        <div class="member">
+        <div class="member" onclick="showBio(this)">
+            <img src="images/user1.jpg" alt="Руководитель проекта">
             <h3>Гневшев Александр Юрьевич</h3>
-            <p>Руководитель проекта. Организация лекций и тренировок.</p>
+            <div class="bio">Руководитель проекта, организатор учебных лекций и тренироввок, направленных на получение базовых и углублённых знаний, необходимых для участия в CTF-соревнованиях</div>
         </div>
-        <div class="member">
+        <div class="member" onclick="showBio(this)">
+            <img src="images/user2.jpg" alt="Кураторы команды CTF">
             <h3>Добрые студенты второго курса</h3>
-            <p>Разработка учебных материалов, проведение лекций, сбор на мероприятия, отчтность руководителю проекта</p>
+            <div class="bio">Проводят нам теоритические лекции, предупреждают о грядущих сорвеноваиниях, проводят разбор задач, проверку доманих работ, делают всё необходимое для получения нами новых знаний</div>
         </div>
-        <div class="member">
+        <div class="member" onclick="showBio(this)">
+            <img src="images/user3.jpg" alt="Перспективные смешарики">
             <h3>Любознательные студенты первого курса</h3>
-            <p>Грызём гранит науки и ищем флаги</p>
+            <div class="bio">Грызём гранит науки и ищем флаги</div>
         </div>
     </div>
 </main>
+    <footer>
+        <p>© CTF Team Project 2024</p>
+    </footer>
+<script src="js/script.js"></script>
+</body>
+</html>
